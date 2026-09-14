@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - تطبيق حافلتنا | Privacy Policy</title>
+    <link rel="icon" type="image/png" href="assets/images/bus_logo.png">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-light: #3b82f6;
+            --secondary: #f59e0b;
+            --bg-light: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #1e293b;
+            --text-muted: #64748b;
+            --border: #e2e8f0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Cairo', sans-serif;
+            background-color: var(--bg-light);
+            color: var(--text-main);
+            line-height: 1.8;
+            padding-bottom: 60px;
+        }
+
+        .en-mode {
+            font-family: 'Inter', sans-serif;
+            direction: ltr;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e3a8a 0%, #1e1b4b 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            position: relative;
+        }
+
+        .header-content {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .app-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.15);
+            padding: 6px 16px;
+            border-radius: 30px;
+            font-size: 14px;
+            margin-bottom: 16px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+            font-weight: 800;
+            margin-bottom: 10px;
+        }
+
+        .lang-switch {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+
+        .lang-btn {
+            background: white;
+            color: var(--primary);
+            border: none;
+            padding: 8px 18px;
+            border-radius: 20px;
+            font-weight: 700;
+            cursor: pointer;
+            font-size: 13px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            transition: all 0.2s;
+        }
+
+        .lang-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 16px;
+            padding: 35px;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+            margin-bottom: 24px;
+        }
+
+        .last-update {
+            display: inline-block;
+            background: #eff6ff;
+            color: var(--primary-light);
+            padding: 4px 12px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 20px;
+            color: var(--primary);
+            margin: 28px 0 14px 0;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        h2::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background: var(--secondary);
+            border-radius: 3px;
+        }
+
+        p {
+            color: #334155;
+            font-size: 15.5px;
+            margin-bottom: 14px;
+            text-align: justify;
+        }
+
+        ul {
+            list-style: none;
+            padding-right: 0;
+            margin-bottom: 20px;
+        }
+
+        .en-mode ul {
+            padding-left: 0;
+        }
+
+        li {
+            position: relative;
+            padding-right: 24px;
+            margin-bottom: 10px;
+            color: #475569;
+            font-size: 15px;
+        }
+
+        .en-mode li {
+            padding-right: 0;
+            padding-left: 24px;
+        }
+
+        li::before {
+            content: "✓";
+            position: absolute;
+            right: 0;
+            color: #10b981;
+            font-weight: bold;
+        }
+
+        .en-mode li::before {
+            right: auto;
+            left: 0;
+        }
+
+        .alert-box {
+            background: #f0fdf4;
+            border: 1px solid #bbf7d0;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 25px 0;
+        }
+
+        .alert-title {
+            color: #166534;
+            font-weight: 700;
+            margin-bottom: 6px;
+        }
+
+        footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body id="body">
+
+    <header>
+        <div class="lang-switch">
+            <button class="lang-btn" onclick="toggleLanguage()">English</button>
+        </div>
+        <div class="header-content">
+            <div class="app-badge">🚌 تطبيق حافلتنا - Hafilatona</div>
+            <h1 id="pageTitle">سياسة الخصوصية وحماية البيانات</h1>
+            <p id="pageSubtitle" style="color: #cbd5e1; text-align: center;">التزامنا التام بأعلى معايير الأمان والشفافية مع مستخدمينا</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- النسخة العربية -->
+        <div class="card" id="contentAr">
+            <span class="last-update">تاريخ آخر تحديث: 14 سبتمبر 2026</span>
+            
+            <p>
+                نحن في تطبيق <strong>"حافلتنا" (Hafilatona)</strong> نولي سرية وخصوصية مستخدمينا البالغين (أولياء الأمور المعتمدين وسائقي الحافلات وإدارات النقل المدرسية) الأهمية القصوى، ونلتزم بامتثال كامل لسياسات الخصوصية الدولية والمعايير المعتمدة في متجري <strong>Google Play</strong> و <strong>Apple App Store</strong>.
+            </p>
+
+            <h2>1. طبيعة التطبيق والفئة المستهدفة</h2>
+            <p>
+                تطبيق "حافلتنا" هو أداة تنظيمية ولوجستية موجهة حصرياً للاستخدام من قبل الأفراد البالغين (أولياء الأمور، سائقي الحافلات المرخصين، والمشرفين). التطبيق <strong>لا يستهدف الأطفال والقُصّر</strong> ولا يحتوي على أدوات أو محتوى موجه للأطفال.
+            </p>
+
+            <h2>2. البيانات التي نقوم بجمعها</h2>
+            <ul>
+                <li><strong>بيانات الحساب:</strong> الاسم ورقم الهاتف المعتمد لدى إدارة المدرسة للتحقق والمصادقة على الدخول.</li>
+                <li><strong>بيانات النقل والاشتراك:</strong> اسم الراكب، عنوان نقطة الانطلاق ومحطة الوصول المسجلة في خط السير.</li>
+                <li><strong>الموقع الجغرافي المباشر (GPS):</strong> يتم جمع إحداثيات الموقع الجغرافي الحية لحافلة المدرسة أثناء ساعات الرحلة النشطة فقط.</li>
+                <li><strong>معرّف الجهاز ورمز الإشعارات (FCM Token):</strong> لإرسال التنبيهات الفورية وإشعارات اقتراب الحافلة وانطلاق الرحلات.</li>
+            </ul>
+
+            <div class="alert-box">
+                <div class="alert-title">🔒 سياسة استخدام الموقع في الخلفية (Background Location):</div>
+                <p style="margin: 0; font-size: 14.5px; color: #15803d;">
+                    يطلب التطبيق إذن الموقع الجغرافي من هاتف السائق لغايات تشغيل الملاحة الميدانية ومشاركة موقع الحافلة مع أولياء الأمور المعنيين بتلك الحافلة فقط أثناء الرحلة. لا يتم تتبع السائق في أي وقت خارج إطار الرحلة المدرسية الرسمية.
+                </p>
+            </div>
+
+            <h2>3. مشاركة البيانات وحمايتها</h2>
+            <ul>
+                <li>بيانات الحساب ومواقع الحافلات مشفرة بتقنيات SSL/TLS الحديثة.</li>
+                <li><strong>لا نقوم إطلاقاً ببيع أو تأجير أو مشاركة بياناتك</strong> مع أي شركات إعلانية أو جهات خارجية.</li>
+                <li>يتم عزل بيانات كل مدرسة وحافلة عزلاً تاماً، بحيث لا يرى ولي الأمر إلا الحافلة المسجل بها فقط.</li>
+            </ul>
+
+            <h2>4. طلب حذف الحساب والبيانات (Data Deletion)</h2>
+            <p>
+                يحق لأي مستخدم في أي وقت طلب حذف حسابه أو إزالة بياناته الشخصية من السيرفرات بشكل نهائي عبر:
+            </p>
+            <ul>
+                <li>مراجعة إدارة المدرسة أو جهة النقل التابع لها لطلب إلغاء الحساب فوراً.</li>
+                <li>أو عبر إرسال بريد إلكتروني رسمي إلى الدعم الفني: <strong style="color: var(--primary);">support@world-cup26.com</strong> وسيتم التنفيذ خلال 24 ساعة.</li>
+            </ul>
+
+            <h2>5. التواصل والاستفسارات</h2>
+            <p>
+                إذا كان لديك أي استفسار يتعلق بسياسة الخصوصية أو معالجة البيانات، يمكنك التواصل مع فريق الدعم عبر صفحة الدعم الفني أو عبر البريد الإلكتروني.
+            </p>
+        </div>
+
+        <!-- النسخة الإنجليزية -->
+        <div class="card" id="contentEn" style="display: none;">
+            <span class="last-update">Last Updated: September 14, 2026</span>
+            
+            <p>
+                At <strong>"Hafilatona"</strong>, we are committed to safeguarding the privacy and security of our adult users (authorized parents, licensed drivers, and school transport administrations). We strictly adhere to the guidelines set forth by <strong>Google Play</strong> and <strong>Apple App Store</strong>.
+            </p>
+
+            <h2>1. Target Audience & Eligibility</h2>
+            <p>
+                The Hafilatona application is designed exclusively for adult users (parents/guardians and school bus drivers). The application <strong>is not directed to children</strong> and does not knowingly collect personal information from minors.
+            </p>
+
+            <h2>2. Information We Collect</h2>
+            <ul>
+                <li><strong>Account Credentials:</strong> Name and authorized phone number for secure authentication and verification.</li>
+                <li><strong>Transportation Details:</strong> Passenger designation, assigned bus identification, and designated pickup/drop-off coordinates.</li>
+                <li><strong>Real-Time Location (GPS):</strong> Live location tracking of the school bus during active transit sessions.</li>
+                <li><strong>Push Notification Identifier (FCM):</strong> Device tokens to deliver instant proximity and arrival alerts.</li>
+            </ul>
+
+            <div class="alert-box">
+                <div class="alert-title">🔒 Background Location Policy:</div>
+                <p style="margin: 0; font-size: 14.5px; color: #15803d;">
+                    Location data is collected from the driver's device exclusively during active bus trips to provide authorized parents with real-time transit tracking and proximity arrival notifications. Location tracking is strictly disabled outside active scheduled trips.
+                </p>
+            </div>
+
+            <h2>3. Data Sharing and Protection</h2>
+            <ul>
+                <li>All data transmissions are encrypted using standard SSL/TLS protocols.</li>
+                <li><strong>We never sell, rent, or monetize personal data</strong> with third-party advertisers.</li>
+                <li>Complete operational isolation ensures that parents can only access information related to their assigned bus.</li>
+            </ul>
+
+            <h2>4. Data Retention & Account Deletion Requests</h2>
+            <p>
+                Users have the right to request deletion of their account and associated data at any time:
+            </p>
+            <ul>
+                <li>By contacting their institution/school administration directly for immediate deactivation.</li>
+                <li>Or by submitting an official request to our technical team: <strong style="color: var(--primary);">support@world-cup26.com</strong> (processed within 24 hours).</li>
+            </ul>
+
+            <h2>5. Contact Us</h2>
+            <p>
+                For questions or inquiries regarding our privacy standards and data management practices, please contact our support desk at <strong>support@world-cup26.com</strong>.
+            </p>
+        </div>
+
+        <footer>
+            <p>© 2026 تطبيق حافلتنا (Hafilatona App). جميع الحقوق محفوظة.</p>
+        </footer>
+    </div>
+
+    <script>
+        let isArabic = true;
+        function toggleLanguage() {
+            isArabic = !isArabic;
+            const body = document.getElementById('body');
+            const contentAr = document.getElementById('contentAr');
+            const contentEn = document.getElementById('contentEn');
+            const pageTitle = document.getElementById('pageTitle');
+            const pageSubtitle = document.getElementById('pageSubtitle');
+            const langBtn = document.querySelector('.lang-btn');
+
+            if (isArabic) {
+                body.className = '';
+                body.dir = 'rtl';
+                contentAr.style.display = 'block';
+                contentEn.style.display = 'none';
+                pageTitle.textContent = 'سياسة الخصوصية وحماية البيانات';
+                pageSubtitle.textContent = 'التزامنا التام بأعلى معايير الأمان والشفافية مع مستخدمينا';
+                langBtn.textContent = 'English';
+            } else {
+                body.className = 'en-mode';
+                body.dir = 'ltr';
+                contentAr.style.display = 'none';
+                contentEn.style.display = 'block';
+                pageTitle.textContent = 'Privacy Policy & Data Protection';
+                pageSubtitle.textContent = 'Our commitment to the highest security and transparency standards';
+                langBtn.textContent = 'العربية';
+            }
+        }
+    </script>
+</body>
+</html>
